@@ -11,27 +11,46 @@
 <body>
 
     <div class="container">
-        <h2>Char to UNICODE</h2>
-        <div class="input-area border p-4 mb-2">
-            <label class="form-label" for="charinputarea">Paste text or drop text file :</label>
-            <br>
-            <textarea placeholder="Paste text or drop text file" class="form-control" name="charinputarea" id="charinputarea" cols="30" rows="5"></textarea>
-            <br>
-            <button class="btn btn-primary" id="convertToCode">Convert to Code</button>
+        <div class="char-to-unicode-binary p-4 border m-3">
+            <h2>Char to UNICODE</h2>
+            <div class="input-area border p-4 mb-2">
+                <label class="form-label" for="charinputarea">Paste text or drop text file :</label>
+                <br>
+                <textarea placeholder="Paste text or drop text file" class="form-control" name="charinputarea" id="charinputarea" cols="30" rows="5"></textarea>
+                <br>
+                <button class="btn btn-primary" id="convertToCode">Convert to Code</button>
+            </div>
+            <div class="output-area border p-4">
+                <label class="form-label" for="unicode-outout">Unicode:</label>
+                <div id="unicode-outout" class="unicode-outout border p-2">
+                    <p id="unicodevalue" class="letter-spaceing"></p>
+                </div>
+
+
+                <label class="form-label" for="binary-outout">Binary :</label>
+                <div id="binary-outout" class="binary-outout border p-2">
+                    <p id="binaryvalue" class="letter-spaceing"></p>
+                </div>
+                
+
+            </div>
         </div>
-        <div class="output-area border p-4">
-            <label class="form-label" for="unicode-outout">Unicode:</label>
-            <div id="unicode-outout" class="unicode-outout border p-2">
-                <p id="unicodevalue"></p>
+        <div class="char-to-unicode-binary  p-4 border m-3">
+            <h2>Unicode to Char</h2>
+            <div class="input-area border p-4 mb-2">
+                <label class="form-label" for="uniinputarea">Enter Unicode :</label>
+                <br>
+                <textarea placeholder="Paste text or drop text file" class="form-control" name="charinputarea" id="uniinputarea" cols="30" rows="5"></textarea>
+                <br>
+                <button class="btn btn-primary" id="convertToChar">Convert</button>
             </div>
+            <div class="output-area border p-4">
+                <label class="form-label" for="char-outout">Char:</label>
+                <div id="char-outout" class="unicode-outout border p-2">
+                    <p id="carvalue" class="letter-spaceing"></p>
+                </div>
 
-
-            <label class="form-label" for="binary-outout">Binary :</label>
-            <div id="binary-outout" class="binary-outout border p-2">
-                <p id="binaryvalue"></p>
             </div>
-            
-
         </div>
 
 
